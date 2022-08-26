@@ -269,7 +269,7 @@ public class MultiLeaderConfig {
       private int maxWaitingTimeForAccumulatingBatchInMs = 500;
       private long basicRetryWaitTimeMs = TimeUnit.MILLISECONDS.toMillis(100);
       private long maxRetryWaitTimeMs = TimeUnit.SECONDS.toMillis(20);
-      private long walThrottleThreshold = 50 * 1024 * 1024 * 1024L;
+      private long walThrottleThreshold = 10 * 1024 * 1024L;
       private long throttleTimeOutMs = TimeUnit.SECONDS.toMillis(30);
 
       public Replication.Builder setMaxPendingRequestNumPerNode(int maxPendingRequestNumPerNode) {
